@@ -12,5 +12,8 @@
   "dependencies": {
     "@elysiajs/html": "^0.7.0",
     "elysia": "^0.7.15"
+  },
+  "scripts": {
+    "dev": "bun --hot run index.tsx"
   }
 }
