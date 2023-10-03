@@ -15,8 +15,8 @@ const app = new Elysia()
         </BaseHtml>
         )
     )
-    .post("/clicked", () => <div class="text-blue-600">I'm from the server!</div>)
     .get("/todos", () => <TodoList todos={db}/>)
+    .post()
     .listen(3000);
 console.log(`Elysia is running at http://${app.server?.hostname}:${app.server?.port}`);
 
